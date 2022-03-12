@@ -5,6 +5,7 @@
 	padding: 20px;
 }
 .Form-input {
+	margin-right: 20px;
 	padding: 0px 10px;
 	height: 60px;
 	border: none;
@@ -12,7 +13,7 @@
 	font-size: 20px;
 	line-height: 20px;
 	border: 1px solid #63bbff;
-	border-radius: 8px
+	border-radius: 8px;
 }
 .Form-button {
 	width: 60px;

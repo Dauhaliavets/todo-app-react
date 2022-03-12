@@ -5,13 +5,12 @@ import { useState } from 'react';
 import Todos from './Todos/Todos';
 
 function Home(props) {
-
 	const [todos, setTodos] = useState([]);
 
 	const addTask = (inputValue) => {
 		if(inputValue) {
 			const newItem = {
-				id: Math.round(Math.random() * 100),
+				id: Math.round(Math.random() * 10000),
 				value: inputValue,
 				isCheked: false,
 			}

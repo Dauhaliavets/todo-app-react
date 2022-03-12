@@ -1,0 +1,35 @@
+.Todo-item {
+	margin: 5px 0px;
+	padding: 8px 8px;
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid #63bbff;
+	border-radius: 8px;
+	font-size: 16px;
+	line-height: 16px;
+}
+
+.Todo-remove {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-color: #EF4565;
+	font-size: 20px;
+	color: #ffffff;
+	border-radius: 4px;
+	transform: rotate(45deg);
+	transition: .3s;
+}
+.Todo-remove:hover,
+.Todo-remove:active {
+	cursor: pointer;
+	background-color: #f55c78;
+	transform: rotate(135deg);
+	transition: .3s;
+}
+.Todo-remove:active {
+	cursor: pointer;
+	background-color: #f55c78;
+	transform: rotate(135deg);
+	transition: .3s;
+}
