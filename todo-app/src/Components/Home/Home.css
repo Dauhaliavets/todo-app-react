@@ -1,0 +1,8 @@
+.Home-container {
+	max-width: 400px;
+	height: 80vh;
+	align-self: center;
+
+	border: 1px solid #63bbff;
+	border-radius: 5px;
+}
