@@ -4,8 +4,14 @@
 	box-sizing: border-box;
 }
 .App {
+	height: 100vh;
   text-align: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+}
+
+.container {
+	width: 600px;
+	margin: 0 auto;
 }

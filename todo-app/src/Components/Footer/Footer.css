@@ -1,0 +1,22 @@
+.App-footer {
+	background-color: #282c34;
+  min-height: 10vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #61DAFB;
+}
+.footer-body {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.social_link {
+	color: #61DAFB;
+	text-decoration: none;
+	transition: color .5s;
+}
+.social_link:hover {
+	color: #2f9bb9;
+	transition: color .5s;
+}
