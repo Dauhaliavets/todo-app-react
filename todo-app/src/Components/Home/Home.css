@@ -2,6 +2,7 @@
 	max-width: 400px;
 	height: 80vh;
 	align-self: center;
+	overflow-x: auto;
 
 	border: 1px solid #63bbff;
 	border-radius: 5px;

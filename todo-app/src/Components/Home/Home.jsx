@@ -7,11 +7,12 @@ import Todos from './Todos/Todos';
 function Home(props) {
 	const [todos, setTodos] = useState([]);
 
-	const addTask = (inputValue) => {
+	const addTask = (inputValue, descriptionValue) => {
 		if(inputValue) {
 			const newItem = {
 				id: Math.round(Math.random() * 10000),
 				value: inputValue,
+				description: descriptionValue,
 				isCheked: false,
 			}
 			setTodos([...todos, newItem]);

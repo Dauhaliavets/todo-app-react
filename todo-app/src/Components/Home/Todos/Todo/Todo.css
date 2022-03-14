@@ -1,35 +1,49 @@
 .Todo-item {
 	margin: 5px 0px;
-	padding: 8px 8px;
+	padding: 8px;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	border: 1px solid #63bbff;
 	border-radius: 8px;
+}
+.Todo-item_content {
+}
+.Todo-item_name {
+	text-align: left;
+	font-size: 20px;
+	line-height: 23px;
+}
+.Todo-item_descripton {
+	text-align: left;
 	font-size: 16px;
-	line-height: 16px;
+	line-height: 19px;
+	color: rgba(9, 64, 103, 0.47);
 }
 
 .Todo-remove {
 	display: inline-block;
+	flex-shrink: 0;
 	width: 20px;
 	height: 20px;
-	background-color: #EF4565;
+	background-color: #ef4565;
 	font-size: 20px;
+	line-height: 16px;
 	color: #ffffff;
 	border-radius: 4px;
 	transform: rotate(45deg);
-	transition: .3s;
+	transition: 0.3s;
 }
 .Todo-remove:hover,
 .Todo-remove:active {
 	cursor: pointer;
 	background-color: #f55c78;
 	transform: rotate(135deg);
-	transition: .3s;
+	transition: 0.3s;
 }
 .Todo-remove:active {
 	cursor: pointer;
 	background-color: #f55c78;
 	transform: rotate(135deg);
-	transition: .3s;
+	transition: 0.3s;
 }

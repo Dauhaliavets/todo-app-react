@@ -4,9 +4,10 @@ import './Todos.css';
 function Todos({ items, removeTask }){
 	return (
 		<div className="Todos">
+			<h4>{'Current tasks'}</h4>
 			{items.length 
-				? items.map((item, index) => <Todo key={item.id} item={item} index={index} removeTask={removeTask}/>)
-				: 'Задач нет'}
+				? items.map(item => <Todo key={item.id} item={item} removeTask={removeTask}/>)
+				: 'All tasks completed'}
 		</div>
 	)
 }
