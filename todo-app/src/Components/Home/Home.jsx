@@ -19,9 +19,7 @@ function Home(props) {
 	}
 
 	const removeTask = (id) => {
-		setTodos(
-			[...todos.filter(todo => todo.id !== id)]
-		)
+		setTodos(todos.filter(todo => todo.id !== id))
 	}
 
 	return (
