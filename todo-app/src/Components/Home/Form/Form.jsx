@@ -1,7 +1,11 @@
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { addTask } from '../../../Actions/todoActions';
 import './Form.css';
 
-function Form(props) {
+function Form() {
+	const dispatch = useDispatch();
+	
 	const [name, setName] = useState('');
 	const [description, setDescription] = useState('');
 
@@ -9,7 +13,7 @@ function Form(props) {
 		e.preventDefault();
 
 		if(name && description) {
-			props.addTask(name, description);
+			dispatch(addTask(name, description));
 		}
 
 		setName('');

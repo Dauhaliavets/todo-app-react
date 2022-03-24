@@ -5,38 +5,22 @@ import { useEffect, useState } from 'react';
 import Todos from './Todos/Todos';
 
 function Home(props) {
-	const [todos, setTodos] = useState([]);
+	// const [todos, setTodos] = useState([]);
 
-	useEffect(() => {
-		const storageTodos = localStorage.getItem('todos');
-		setTodos(JSON.parse(storageTodos));
-	}, []);
+	// useEffect(() => {
+	// 	const storageTodos = localStorage.getItem('todos');
+	// 	setTodos(JSON.parse(storageTodos));
+	// }, []);
 
-	useEffect(() => {
-		localStorage.setItem('todos', JSON.stringify(todos));
-	}, [todos]);
-
-	const addTask = (inputValue, descriptionValue) => {
-		if(inputValue) {
-			const newItem = {
-				id: Math.round(Math.random() * 10000),
-				value: inputValue,
-				description: descriptionValue,
-				isCheked: false,
-			}
-			setTodos([...todos, newItem]);
-		}
-	}
-
-	const removeTask = (id) => {
-		setTodos(todos.filter(todo => todo.id !== id))
-	}
+	// useEffect(() => {
+	// 	localStorage.setItem('todos', JSON.stringify(todos));
+	// }, [todos]);
 
 	return (
 		<div className="Home-container">
-			<HomeHeader title={props.title}/>
-			<Form addTask={addTask}/>
-			<Todos items={todos} removeTask={removeTask}/>
+			<HomeHeader />
+			<Form />
+			<Todos />
 		</div>
 	)
 }

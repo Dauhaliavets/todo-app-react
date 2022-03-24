@@ -7,7 +7,7 @@ function App() {
 	return (
 		<div className='App'>
 			<Header />
-			<Home title={'Todo App'}/>
+			<Home />
 			<Footer />
 		</div>
 	);

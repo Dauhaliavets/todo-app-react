@@ -1,9 +1,9 @@
 import './HomeHeader.css';
 
-function HomeHeader(props) {
+function HomeHeader() {
 	return (
 		<div className='HomeHeader'>
-			<h2 className='HomeHeader-title'>{props.title}</h2>
+			<h2 className='HomeHeader-title'>{'Todo App'}</h2>
 			<div className="HomeHeader-footer"></div>
 		</div>
 	);
